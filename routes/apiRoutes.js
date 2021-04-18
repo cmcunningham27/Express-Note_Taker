@@ -20,7 +20,7 @@ module.exports = (app) => {
         req.body.id = uniqid.time();
         notes.push(req.body);
         writeNotes(notes);
-        res.end();
+        res.json(note);
     });
 
     //deletes old note the user wishes to no longer have or has completed
@@ -28,7 +28,7 @@ module.exports = (app) => {
         const updatedNotes = notes.filter(note => note.id !== req.params.id);
         writeNotes(updatedNotes);
         notes = updatedNotes;
-        res.end();
+        res.json(true);
     })
 }
 

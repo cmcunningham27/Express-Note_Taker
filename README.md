@@ -3,10 +3,10 @@
 ---
 ## Descriptions
 ---
-
+I was motivated to create the back-end of this app to allow users the ability to read old notes, write new notes, and delete any notes they wish to no longer see. Adding to this project helped me in understanding how to utilize GET, POST, and DELETE for api fetches. Sometimes we find it difficult to remember important information or dates. This app does all the work for the user. You no longer have to remember because you can create notes that you can come back to later. The app uses express, node, HTML, CSS, and Javascript.
 ## Deployed Link
 ---
-[Deployed Application URL](https://cmcunningham27.github.io/Express-Note_Taker)
+[Deployed Application URL](https://mysterious-dusk-21471.herokuapp.com)
 ## Table of Contents
 ---
 - [Installation](#installation)
@@ -19,7 +19,7 @@
 - [Questions](#questions)
 ## Installation
 ---
-
+1. 
 ## Usage
 ---
 ![screenshot]()
