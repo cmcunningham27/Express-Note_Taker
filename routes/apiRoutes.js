@@ -1,3 +1,5 @@
+//dependency
+const app = require("express").Router();
 //dependecy for each new note to get a unique id
 const uniqid = require("uniqid");
 //dependcy to read and write files
@@ -9,7 +11,7 @@ let notes = [];
 //calls function upon visiting /
 init();
 //allows other modules access to content
-module.exports = (app) => {
+// module.exports = (app) => {
     //reads the db.json file and returns all saved notes as JSON Object
     app.get("/api/notes", (req, res) => {
         res.json(notes);
@@ -30,7 +32,7 @@ module.exports = (app) => {
         notes = updatedNotes;
         res.json(true);
     })
-}
+
 
 //function to read the db file as a JSON object and push each history note into the notes array and renders it to notes.html for the user to see on the website or throw an error
 function init() {
@@ -52,3 +54,5 @@ function writeNotes(notes) {
         if (err) throw err;
     })
 };
+
+module.exports = app;
