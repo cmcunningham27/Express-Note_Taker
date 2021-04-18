@@ -8,9 +8,11 @@ const PORT = process.env.PORT || 3000;
 //Middleware to recognize incoming Request Object as string or arrays (urlencoded) or as a json object (json)
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'));
 
-//adds the api and html routes to express app
+//when require apiRoutes, we call express function to retrieve apiRoutes module.exports
 require("./routes/apiRoutes")(app);
+//when require htmlRoutes, we call express function to retrieve htmlRoutes module.exports
 require("./routes/htmlRoutes")(app);
 
 // Listener to start the server
