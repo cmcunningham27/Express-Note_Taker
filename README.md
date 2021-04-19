@@ -13,9 +13,6 @@ I was motivated to create the back-end of this app to allow users the ability to
 - [Usage](#usage)
 - [License](#license)
 - [Complications](#complications)
-- [Features](#features)
-- [Contribute](#contribute)
-- [Tests](#tests)
 - [Questions](#questions)
 ## Installation
 ---

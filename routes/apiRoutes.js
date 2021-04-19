@@ -20,7 +20,7 @@ module.exports = (app) => {
         req.body.id = uniqid.time();
         notes.push(req.body);
         writeNotes(notes);
-        res.json(note);
+        res.json(req.body);
     });
 
     //deletes old note the user wishes to no longer have or has completed
