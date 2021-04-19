@@ -44,6 +44,8 @@ This project is licensed under the MIT license.
 Early on I ran into an issue with getting the notes to get written into the db file and render onto the page. It took time, but eventually realized that the file paths were the problem. I did not need the ./ in the apiRoutes file for my read and write methods. A simple change and it was all restored.
 
 I ran into an issue with my deployed app. It wasn't displaying the save button when I created a new note. I could not figure it out. Then the TA skimmed the index.html and noticed that at some point I must have changed it. I remember doing that because I thought the parameter needed to have html in it. Was I wrong! A quick change back to /notes and the issue was resolved.
+
+Right as I was finishing up the app, I noticed that I was getting a 500 error. To fix this I changed the res.json() in the apiRoutes.js from note to req.body. I pushed the changes and added a new note in the deployed app. No more error!
 ## Questions
 ---
 [GitHub Profile](https://github.com/cmcunningham27)
