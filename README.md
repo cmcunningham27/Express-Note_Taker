@@ -23,7 +23,7 @@ I was motivated to create the back-end of this app to allow users the ability to
 5. It will run the same as if you were on the deployed URL
 ## Usage
 ---
-![Live Demo](https://drive.google.com/file/d/1ZZekUZHGM5DI23lUMQh_g7ZMX2gPjpXy/view)
+[Live Demo](https://drive.google.com/file/d/1ZZekUZHGM5DI23lUMQh_g7ZMX2gPjpXy/view)
 1. Visit the deployed website listed above.
 2. Click on the "Get Started" button.
 3. Click on "Note Title" and type in the title you would like for you note.
